@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<center><body>
+    <h1><font color="black" size="10">CALCULATOR</font></h1>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <table>
+            <tr>
+                <td><button onclick="appendNumber(7)">7</button></td>
+                <td><button onclick="appendNumber(8)">8</button></td>
+                <td><button onclick="appendNumber(9)">9</button></td>
+                <td><button onclick="setOperator('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(4)">4</button></td>
+                <td><button onclick="appendNumber(5)">5</button></td>
+                <td><button onclick="appendNumber(6)">6</button></td>
+                <td><button onclick="setOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(1)">1</button></td>
+                <td><button onclick="appendNumber(2)">2</button></td>
+                <td><button onclick="appendNumber(3)">3</button></td>
+                <td><button onclick="setOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(0)">0</button></td>
+                <td><button onclick="clearResult('c')">c</button></td>
+                <td><button onclick="calculate('=')">=</button></td>
+                <td><button onclick="setOperator('/')">/</button></td>
+            </tr>
+        </table>
+    </div>
+        <script src="cal.js"></script>
+</body></center>
+</html>
+<style>
+    table{
+        width: 100px;
+        margin-left: 0%;
+    }
+    input{
+        width: 365px;
+        height: 60px;
+        background-color: bisque;
+    }
+    button{
+        width: 90px;
+        height: 90px;
+        background-color: lightblue;
+    }
+    button:hover{
+        background-color: rgb(239, 197,119);
+
+    }
+    body{
+        background-image: url(calb.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        padding-right: 750px;
+        padding-top: 50px;
+
+    }
+
+
+
+</style>
